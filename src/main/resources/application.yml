@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    restart:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  cloud:
+    kubernetes:
+      enabled: false
+  application:
+    name: springkubernetesservice
+
+
